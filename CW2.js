@@ -27,9 +27,14 @@ for ( let i=0; i<=10; i++){
 
 let i = 0
 while(i <= 20){
-  if(i % 5 ==0) console.log(i);
-  i++
+  if(i % 2 ==0) {
+    if( i % 5 !==0){
+      console.log(i);
+    }
+  }
+  i++;
 }
+
 
 // 3
 
