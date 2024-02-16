@@ -22,8 +22,7 @@ function calculateFactorial(n) {
   if (n === 0 || n === 1) {
     return 1;
   } else {
-    let result;
-    result = n * calculateFactorial(n - 1);
+   const result = n * calculateFactorial(n - 1);
     return result;
   }
 }
@@ -33,7 +32,7 @@ console.log(calculateFactorial(5));
 //3
 
 function addWithLoss(a, b, base = 1) {
-  let result = a + b;
+  const result = a + b;
   return +result.toFixed(base);
 }
 
@@ -42,7 +41,7 @@ console.log(addWithLoss(1.001, 2.002));
 //4
 
 function processText(str) {
-  let res = str.trim().toLowerCase().replaceAll("a", "X");
+  const res = str.trim().toLowerCase().replaceAll("a", "X");
   console.log(res);
   return res;
 }
@@ -50,6 +49,8 @@ function processText(str) {
 console.log(processText("Another Example"));
 
 //5
+
+// //5
 
 function encode_string(s, key) {
   let result = "";
@@ -62,7 +63,7 @@ function encode_string(s, key) {
   return result;
 }
 
-console.log(encode_string("Hello, World!", 5));
+/*----------------------*/
 
 function decode_string(encodedStr, key) {
   let result = "";
@@ -74,4 +75,8 @@ function decode_string(encodedStr, key) {
   return result;
 }
 
-console.log(decode_string("Mjqqt1%\twqi&", 5));
+const key = 5;
+const encoded = encode_string("Hello, World!", key);
+const decoded = decode_string(encoded, key);
+
+console.log(encoded, decoded);
