@@ -28,7 +28,7 @@ function calculateFactorial(n) {
   }
 }
 
-console.log(calculateFactorial(1));
+console.log(calculateFactorial(5));
 
 //3
 
