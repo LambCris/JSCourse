@@ -6,7 +6,6 @@ function multiply(n) {
       let result = "";
       for (let j = 1; j <= n; j++) {
         result += i * j + " ";
-        console.log(result);
       }
       console.log(result);
     }
@@ -15,7 +14,7 @@ function multiply(n) {
     return;
   }
 }
-console.log(multiply("5"));
+console.log(multiply(5));
 
 //2
 
