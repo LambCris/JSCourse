@@ -38,7 +38,7 @@ console.log(sortString("lacitebbah"));
 
 //4
 
-function foo(str) {
+function findIndex(str) {
   for (let i = 0; i <= str.length; i++) {
     const char = str[i]; // символы
 
@@ -49,7 +49,7 @@ function foo(str) {
   return -1;
 }
 
-console.log(foo("фывфавыапрс"));
+console.log(findIndex("фывфавыапрс"));
 
 //5
 
