@@ -8,13 +8,15 @@ const person = {
 
 function middleNumber(obj) {
   let result = 0;
+  let lastResult;
   for (let key in obj) {
     if (typeof obj[key] === "number") {
       result += obj[key];
-      const lastResult = result / 3;
-      console.log(lastResult);
+      lastResult = result / 3;
     }
   }
+  return lastResult;
 }
 
-console.log(middleNumber(person));
+const totalSum = middleNumber(person);
+console.log(totalSum);
