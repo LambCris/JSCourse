@@ -1,54 +1,51 @@
+//1
+const user = {
+    name: "Boris",
+    age: 24
+}
 
-// const user = {
-//     name: "Boris",
-//     age: 24
-// }
-
-// delete user.name;
-// user.firstName = "Kristina"
-// console.log(user)
+delete user.name;
+user.firstName = "Kristina"
+console.log(user)
 
 // переделайте объект таким образом, чтобы у него было 2 ключа: firstName и age
 
 // 2
-// const fruitContainer = [];
-// fruitContainer.push('pear', 'apple', 'orange');
-// fruitContainer[1] = 'lemon';
-// console.log(fruitContainer);
+const fruitContainer = [];
+fruitContainer.push('pear', 'apple', 'orange');
+fruitContainer[1] = 'lemon';
+console.log(fruitContainer);
 
 // Добавьте 3 фрукта в массив fruitContainer
 // Измените название второго фрукта
 
-
-
-
 // 3
 
-// let yearsOfService = 8;
-// let performanceRating = 5;
-// let salary = 3500;
-// let bonus=0;
+let yearsOfService = 8;
+let performanceRating = 5;
+let salary = 3500;
+let bonus=0;
 
 
-// function getBonus(years, rating, salary){
-//   if (years >=5 && (rating ===4 ||rating === 5)){
-//   bonus = salary*10/100;
-//   console.log(`Your bonus is ${bonus}`);
-//   }else if (years <5 && (rating ===4 ||rating === 5)){
-//     bonus = salary*5/100;
-//     console.log(`Your bonus is ${bonus}`);
-//   }else{
-//     return 'The employee does not have any bonus';
-//     }
-//   return bonus;
-// }
-// console.log(getBonus(yearsOfService, performanceRating, salary))
+function getBonus(years, rating, salary){
+  if (years >=5 && (rating ===4 ||rating === 5)){
+  bonus = salary*10/100;
+  console.log(`Your bonus is ${bonus}`);
+  }else if (years <5 && (rating ===4 ||rating === 5)){
+    bonus = salary*5/100;
+    console.log(`Your bonus is ${bonus}`);
+  }else{
+    return 'The employee does not have any bonus';
+    }
+  return bonus;
+}
+console.log(getBonus(yearsOfService, performanceRating, salary))
 
-// const employeeInfo = {
-//   salary, 
-//   bonus,
-// }
-// console.log(employeeInfo);
+const employeeInfo = {
+  salary, 
+  bonus,
+}
+console.log(employeeInfo);
 
 
 /*
@@ -71,41 +68,41 @@
  */
 
 // 4
-// const userData = {
-//     name: "Victor",
-//     age: 31,
-//     address: {
-//         street: '123 Main Street',
-//         city: 'Cityville',
-//         state: 'Stateville',
-//         zipCode: '12345'
-//     }
-// }
+const userData = {
+    name: "Victor",
+    age: 31,
+    address: {
+        street: '123 Main Street',
+        city: 'Cityville',
+        state: 'Stateville',
+        zipCode: '12345'
+    }
+}
 
-// const userData2 = {
-//     name: "Vlad",
-//     age: "31",
-//     address: {
-//         street: '456 Oak Avenue',
-//         city: 'Townsville',
-//         state: 'Stateland',
-//         zipCode: null
-//     }
-// }
+const userData2 = {
+    name: "Vlad",
+    age: "31",
+    address: {
+        street: '456 Oak Avenue',
+        city: 'Townsville',
+        state: 'Stateland',
+        zipCode: null
+    }
+}
 
-// const data = [userData, userData2]
+const data = [userData, userData2]
 
-// if (data[2]) { 
-//   console.log("1")   //false. в массиве нет 2 элемента
-// } else if (data[0].age === data[1].age && !(typeof data[0].name !== "string" || typeof data[1].address.zipCode)) {
-//   console.log("2")  //false. сначала отрабатывает то, что в скобках. || возвращает  первое истиное значение - typeof data[1].address.zipCode - object.
-//   потом отрабатывает  &&. он возвращает первое ложное значение ( ! перд выражением в скобках отрицает, что typeof data[1].address.zipCode = object )
-// } else if (typeof data[0].name === "string" && +data[1].age <= 0) {
-//   console.log("3")  //false. data[1].age здесь равен 31. 31 >0
-// } else if (typeof data[1].address["zipCode"] === "object") {
-//   console.log("4")   //true. typeof null - object. bug  в js
-// } else {
-//   console.log("5")  // сработало условие выше
+if (data[2]) { 
+  console.log("1")   //false. в массиве нет 2 элемента
+} else if (data[0].age === data[1].age && !(typeof data[0].name !== "string" || typeof data[1].address.zipCode)) {
+  console.log("2")  //false. сначала отрабатывает то, что в скобках. || возвращает  первое истиное значение - typeof data[1].address.zipCode - object.
+  потом отрабатывает  &&. он возвращает первое ложное значение ( ! перд выражением в скобках отрицает, что typeof data[1].address.zipCode = object )
+} else if (typeof data[0].name === "string" && +data[1].age <= 0) {
+  console.log("3")  //false. data[1].age здесь равен 31. 31 >0
+} else if (typeof data[1].address["zipCode"] === "object") {
+  console.log("4")   //true. typeof null - object. bug  в js
+} else {
+  console.log("5")  // сработало условие выше
 
 
 // 5
@@ -125,33 +122,33 @@
     - Выведите сообщение о выборе языка программирования с использованием `console.log`.
  */
 
-// let programmingLanguage = "JavaScript";
+let programmingLanguage = "JavaScript";
 
-// function compareLanguages(language){
+function compareLanguages(language){
 
-//   switch (language){
+  switch (language){
 
-//     case "JavaScript":
-//     console.log('JavaScript - отличный выбор для веб-разработки!');
-//     break;
+    case "JavaScript":
+    console.log('JavaScript - отличный выбор для веб-разработки!');
+    break;
   
-//     case "Python":
-//     console.log('Python - мощный и удобный язык для разработки.');
-//     break;
+    case "Python":
+    console.log('Python - мощный и удобный язык для разработки.');
+    break;
   
-//     case "Java":
-//     console.log('Java - популярный язык для разработки кросс-платформенных приложений.');
-//     break;
+    case "Java":
+    console.log('Java - популярный язык для разработки кросс-платформенных приложений.');
+    break;
   
-//     case "C++":
-//     console.log('C++ - язык с высокой производительностью и возможностями низкоуровневого программирования.');
-//     break;
+    case "C++":
+    console.log('C++ - язык с высокой производительностью и возможностями низкоуровневого программирования.');
+    break;
   
-//     default:
-//     console.log('Такого языка нет в списке!');
-//   }
-//   return language;
+    default:
+    console.log('Такого языка нет в списке!');
+  }
+  return language;
 
-// }
+}
 
-// console.log(compareLanguages(programmingLanguage))
+console.log(compareLanguages(programmingLanguage))
