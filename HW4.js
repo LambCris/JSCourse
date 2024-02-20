@@ -26,7 +26,7 @@ function longestWord(str) {
 }
 console.log(longestWord("Web Development Tutorial"));
 
-//3
+//3 вывести в алфавитном порядке
 
 function sortString(str) {
   const result = str.split("").sort().join("");
@@ -36,7 +36,7 @@ function sortString(str) {
 
 console.log(sortString("lacitebbah"));
 
-//4
+//4  первый неповторяющийся символ
 
 function findIndex(str) {
   for (let i = 0; i <= str.length; i++) {
@@ -51,7 +51,7 @@ function findIndex(str) {
 
 console.log(findIndex("фывфавыапрс"));
 
-//5
+//5  вывести все гласные
 
 function countVowels(str) {
   const sortedStr = str.match(/[aeiou]/gi).join("").length - 1;
