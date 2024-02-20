@@ -3,7 +3,7 @@
 function multiply(n) {
   if (typeof n === "number" && n > 0) {
     for (let i = 1; i <= n; i++) {
-      let result = "";
+      const result = "";
       for (let j = 1; j <= n; j++) {
         result += i * j + " ";
       }
