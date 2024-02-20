@@ -1,3 +1,5 @@
+// 1
+
 const person = {
   name: "Pete",
   age: 24,
@@ -7,8 +9,8 @@ const person = {
 };
 
 function middleNumber(obj) {
-  let result = 0;
-  let lastResult;
+  const result = 0;
+  const lastResult;
   for (let key in obj) {
     if (typeof obj[key] === "number") {
       result += obj[key];
