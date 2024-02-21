@@ -44,3 +44,25 @@ console.log(formatDate(time));
 //3. Добавьте ведущий ноль к значениям, если они состоят из одной цифры.
 //4. Сформируйте строку в формате "DD.MM.YYYY, HH:mm:ss".
 //5. Верните отформатированную строку.
+
+
+*******
+//Напишите кастомный Object.assign,
+//который принимает на вход целевой объект для копирования и копируемый объект и возвращает целевой
+
+  function customAssign(target, ...sources) {
+  console.log(sources); //здесь массив объектов
+  for (let source of sources) {  //перебор копируемого {}
+    for (let [key, value] of Object.entries(sources)) {
+      target[key] === value;
+    }
+  }
+  return target;
+}
+
+const info = { name: "John", lastName: "Li" };
+
+const result = customAssign({}, info);
+console.log(result);
+
+
