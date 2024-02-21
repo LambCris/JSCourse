@@ -9,15 +9,13 @@ const person = {
 };
 
 function middleNumber(obj) {
-  const result = 0;
-  const lastResult;
+  let result = 0;
   for (let key in obj) {
     if (typeof obj[key] === "number") {
-      result += obj[key];
-      lastResult = result / 3;
+      result = result + obj[key] / 3;
     }
   }
-  return lastResult;
+  return result;
 }
 
 const totalSum = middleNumber(person);
@@ -50,12 +48,9 @@ console.log(formatDate(time));
 //Напишите кастомный Object.assign,
 //который принимает на вход целевой объект для копирования и копируемый объект и возвращает целевой
 
-  function customAssign(target, ...sources) {
-  console.log(sources); //здесь массив объектов
-  for (let source of sources) {  //перебор копируемого {}
-    for (let [key, value] of Object.entries(sources)) {
-      target[key] === value;
-    }
+  function customAssign(target, sources) {
+  for (let key in sources) {
+    target[key] = sources[key];
   }
   return target;
 }
@@ -63,6 +58,9 @@ console.log(formatDate(time));
 const info = { name: "John", lastName: "Li" };
 
 const result = customAssign({}, info);
-console.log(result);
+//result.name = "qwerty";
+
+console.log(result, info);
+
 
 
