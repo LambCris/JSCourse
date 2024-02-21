@@ -59,14 +59,14 @@ console.log(result);
 // Создайте функцию, которая принимает две даты в формате объекта `Date`
 // и возвращает разницу между ними в виде объекта с полями `years`, `months`, `days`, `hours`, `minutes`, `seconds`.
 
-function dateDifference(date1, date2) {
-  const hourDifference = Math.abs(date1.getHours() - date2.getHours());
-  const monthDifference = Math.abs(date1.getMonth() - date2.getMonth());
-  const daysDifference = Math.abs(date1.getDay() - date2.getDay());
-  const minDifference = Math.abs(date1.getMinutes() - date2.getMinutes());
-  const secondsDifference = Math.abs(date1.getSeconds() - date2.getSeconds());
-  const msDif = Math.abs(date1.getMilliseconds() - date2.getMilliseconds());
-  const yearsDifference = Math.abs(date1.getYear() - date2.getYear());
+function dateDifference(startDate, endDate) {
+  const hourDifference = Math.abs(startDate.getHours() - endDate.getHours());
+  const monthDifference = Math.abs(startDate.getMonth() - endDate.getMonth());
+  const daysDifference = Math.abs(startDate.getDay() - endDate.getDay());
+  const minDifference = Math.abs(startDate.getMinutes() - endDate.getMinutes());
+  const secondsDifference = Math.abs(startDate.getSeconds() - endDate.getSeconds());
+  const msDif = Math.abs(startDate.getMilliseconds() - endDate.getMilliseconds());
+  const yearsDifference = Math.abs(startDate.getYear() - endDate.getYear());
 
   return {
     years: yearsDifference,
