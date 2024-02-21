@@ -16,9 +16,10 @@ students.forEach((student) => {
   let sum = 0;
   for (let key of student.grades) {
     sum += key;
-    const ovrNum = key / 3;
+    const ovrNum = sum / student.grades.length;
     student["averageGrade"] = Math.round(ovrNum); // добавили св-во в объект
   }
+  console.log(sum);
 });
 
 students.sort((a, b) => {
