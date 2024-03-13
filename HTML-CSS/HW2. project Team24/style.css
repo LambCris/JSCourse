@@ -43,7 +43,7 @@ a {
   background-color: transparent;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
+  font-size: 20px;
 }
 .header_content {
   align-items: center;
@@ -51,7 +51,9 @@ a {
 }
 .logo a {
   font-family: "Forum", serif;
-  font-size: 24px;
+  font-size: 30px;
+  line-height: 50px;
+  font-weight: 400;
 }
 .menu {
   align-items: center;
@@ -121,7 +123,9 @@ main {
   width: 600px;
   position: relative;
   left:0;
-  top: 270px;
+  top: 300px;
+  letter-spacing: 3px;
+  line-height: 50px;
   
 }
 #banner h1 span,
@@ -135,14 +139,13 @@ main {
   background-color: #fff;
   color: #000;
   text-align: center;
-  padding-bottom: 30px;
 }
 #about h3 {
   font-family: "Forum", serif;
-  font-size: 35px;
+  font-size: 40px;
   letter-spacing: 1px;
   font-weight: 400;
-  padding: 20px 0 30px;
+  padding: 15px 0 20px;
 }
 #about h3:after {
   content: "";
@@ -150,12 +153,13 @@ main {
   width: 30px;
   height: 1px;
   background-color: #000;
-  margin: 10px auto;
+  margin: 0 auto;
 }
 
 #about p {
-  padding: 10px 0 20px;
-  font-size: 22px;
+  padding: 20px 0 20px;
+  font-size: 20px;
+  line-height: 40px;
 }
 .slider {
   padding-top: 20px 0 30px;
@@ -170,7 +174,7 @@ main {
 }
 
 .slider_img {
-  flex: 0 1 430px;
+  flex: 0 1 450px;
   height: 560px;
 }
 .slider_img img {
@@ -186,7 +190,7 @@ main {
 /*-----------dots----------*/
 
 .slider_dots {
-  padding: 30px 0 0;
+  padding: 40px 0 40px;
   justify-content: center;
 }
 
@@ -223,17 +227,19 @@ span.checked {
 } 
 
 
-
-
 /*------------------------footer------------------------------------------*/
 footer {
   background-color: #000;
-  padding: 20px 0 20px;
 }
+
 .footer_address {
   justify-content: space-between;
   border-bottom: 1px solid #fff;
-  padding-bottom: 20px;
+  padding: 20px 0 30px;
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 30px;
+
 }
 .footer_left {
   flex-direction: column;
@@ -251,17 +257,26 @@ footer {
 }
 .footer_info {
   font-family: "Forum", serif;
-  font-size: 18px;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
-  letter-spacing: 2px;
+  padding: 45 0 45px;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.footer_info .year{
+  padding-right: 15px;
+  line-height: 20px;
 }
 
 .footer_info .team{
   text-transform: uppercase;
-  font-size: 20px;
+  margin-left: 120px;
 }
+
+.footer_info .username{
+  padding-bottom: 40px;
+} 
 .git {
   transition: 0.3s ease;
 }
@@ -366,6 +381,7 @@ footer {
   .slider_img {
     height: 350px;
   }
+
   .footer_address {
     flex-wrap: wrap;
   }
