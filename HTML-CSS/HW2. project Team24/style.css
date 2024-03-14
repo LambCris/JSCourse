@@ -112,7 +112,7 @@ main {
 #banner {
   height: 690px;
   background-image: url("./img/Welcome.jpg");
-  background-size: cover
+  background-size: cover;
 }
 #banner h1 {
   font-family: "Forum", serif;
