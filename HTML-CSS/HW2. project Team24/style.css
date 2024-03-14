@@ -203,12 +203,12 @@ main {
   align-items: center;  
   border: none;
   background-color: transparent;
+  margin-right: 10px;
  
 }
 
 .wrapper span {
   display: block;
-  margin-right: 8px;
   height: 16px;
   width: 16px;
   background-color: #000;
@@ -431,5 +431,5 @@ footer {
     width: 300px;
     font-size: 25px;
     padding: 15 20;
-  } 
+  }  
 }
