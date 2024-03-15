@@ -112,7 +112,7 @@ main {
 #banner {
   height: 690px;
   background-image: url("./img/Welcome.jpg");
-  background-size: cover;
+  background-size: cover
 }
 #banner h1 {
   font-family: "Forum", serif;
@@ -243,7 +243,6 @@ footer {
   font-size: 15px;
   line-height: 20px;
   margin-bottom: 40px;
-
 }
 .footer_left {
   flex-direction: column;
@@ -374,9 +373,35 @@ footer {
     height: 560px;
   }
 
+  .menu_burger{
+    margin-right: 35px;
+  }
 
+  #banner h1 {
+    top: 310px;
+  }
 
+  #about p {
+    padding: 20px 15px 20px;
+    font-size: 20px;
+  }
 
+  .slider_dots {
+    padding: 20px 0 40px;
+    justify-content: center;
+  }
+
+  .footer_address {
+    padding: 20px 20px 30px;
+  }
+
+  .footer_right .footer_right_wrapper:first-child{
+    padding-bottom: 10px ;
+  }
+
+  .wrapper{
+    margin-right: 5px;
+  }
 }
 
 @media (max-width: 692px){
@@ -431,5 +456,7 @@ footer {
     width: 300px;
     font-size: 25px;
     padding: 15 20;
-  }  
+  }
+  
+  
 }
