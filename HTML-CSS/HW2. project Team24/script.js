@@ -6,7 +6,6 @@ burger.addEventListener("click", () => {
   menu.classList.toggle("open");
 });
 
-
 // ------- slider--------------------
 const sliderImages = document.querySelector('.slider_images');
 const images = document.querySelectorAll('.slider_images .slider_img');
@@ -56,3 +55,66 @@ dots.forEach( (dot,ind)=>{
     dots[index].classList.add('checked')
   })
 })
+
+// ------- -----------------------CONTROLS---------------- 
+
+//-------btn--------
+const winterBtn = document.querySelector('.controls_btn #winter');
+const springBtn = document.querySelector('.controls_btn #spring');
+const summerBtn= document.querySelector('.controls_btn #summer');
+const autumnBtn = document.querySelector('.controls_btn #autumn');
+
+// ------books------
+
+const springBooks = document.querySelector('.spring_season');
+const summerBooks = document.querySelector('.summer_season');
+const autumnBooks = document.querySelector('.autumn_season');
+const winterBooks = document.querySelector('.winter_season');
+const inputs = document.querySelectorAll('.controls input[type="radio"]');
+
+
+
+function springBook(){
+  springBtn.addEventListener('click', function(){
+    winterBooks.classList.add('card');
+    summerBooks.classList.add('card');
+    autumnBooks.classList.add('card');
+    springBooks.classList.remove('card');
+})
+}
+springBook()
+
+function summerBook(){
+  summerBtn.addEventListener('click', function(){
+    winterBooks.classList.add('card');
+    autumnBooks.classList.add('card');
+    springBooks.classList.add('card');
+    summerBooks.classList.remove('card');
+})
+}
+summerBook()
+
+
+function autumnBook(){
+  autumnBtn.addEventListener('click', function(){
+    springBooks.classList.add('card');
+    summerBooks.classList.add('card');
+    winterBooks.classList.add('card');
+    autumnBooks.classList.remove('card');
+})
+}
+autumnBook()
+
+function winterBook(){
+  winterBtn.addEventListener('click', function(){
+    springBooks.classList.add('card');
+    summerBooks.classList.add('card');
+    autumnBooks.classList.add('card');
+    winterBooks.classList.remove('card');
+})
+}
+winterBook()
+
+
+
+
