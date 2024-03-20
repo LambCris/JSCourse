@@ -106,6 +106,7 @@ a {
 
 main {
   flex: 1 0 auto;
+  background-color: #fff;
 }
 
 /*------------------------banner-------------------------------------------*/
@@ -145,14 +146,14 @@ main {
   text-align: center;
   line-height: 40px;
 }
-#about h3 {
+#about h3, .books_description h3 {
   font-family: "Forum", serif;
   font-size: 40px;
   letter-spacing: 1px;
   font-weight: 400;
   padding: 15px 0 20px;
 }
-#about h3:after {
+#about h3:after, .books_description h3:after {
   content: "";
   display: block;
   width: 40px;
@@ -226,6 +227,129 @@ span.checked {
 .left, .right{
   display: none;
 }
+
+/*-------------------books------------------------------------*/
+#books{
+  color: #000;
+  font-size: 15px;
+  line-height: 40px;
+  margin-bottom: 40px;
+}
+
+.books_description{
+  padding: 0 40px;
+}
+
+.books_description h3{
+  text-align: center;
+}
+.books_description p{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.card_info h3{
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.card_info h3:after{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color:  #bb945f;
+  margin: 0 0 20px;
+}
+.card{
+  display: none;
+}
+
+.cards_wrapper{
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cards_card{
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #000;
+  flex: 0 0 40%;
+  padding: 15px 20px;
+  position: relative;
+  min-height: 200px;
+  margin: 10px 20px;
+}
+
+.card_info{
+  max-width: 70%;
+  padding-right: 10px;
+}
+
+.card_info img{
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  bottom: 0;
+  right: -20px;
+}
+.cards_card h4{
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.cards_card .author{
+  font-weight: 700;
+  padding-top: 5px;
+}
+
+.card_info p{
+  padding-top: 20px;
+}
+
+
+.cards_card button{
+  width: 75px;
+  height: 30px;
+  text-align: center;
+  background-color: #fff;
+  transition: .3s ease;
+  border: 1px solid #000;
+  border-radius: 3px;
+  margin-top: 20px;
+}
+
+.cards_card button:hover{
+  background-color: #bb945f;
+}
+
+/* -------controls----------- */
+
+.controls_btn label{
+ font-weight: 400px;
+}
+
+input[type="radio"]:checked + .controls_btn label {
+  font-weight: 700px;
+}
+
+.controls_btn input{
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  appearance: none;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+[type="radio"]:checked {
+  background-color: #000;
+  
+}
+
+.controls_btn{
+  margin-right: 40px;
+}
+
 
 /*------------------------footer------------------------------------------*/
 footer {
@@ -397,6 +521,16 @@ footer {
     padding: 20px 0 25px;
   }
 
+  .cards_wrapper{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards_card{
+    width: 500px;
+    min-height: 500px;
+  }
+
   .footer_body{
     padding: 0 15px 30px;
   }
@@ -508,6 +642,8 @@ footer {
     width: 300px;
     font-size: 25px;
     padding: 15 20;
-  }  
+  }
+
 }
+
 
